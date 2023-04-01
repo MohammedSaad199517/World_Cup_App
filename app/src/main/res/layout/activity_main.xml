@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+    <TextView
+        android:id="@+id/textYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textLarge"
+        android:layout_marginTop="@dimen/marginNormal"
+        tools:text="2010"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+        android:id="@+id/textHomeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textLarge"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="@dimen/marginNormal"
+        tools:text="Barazil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textYear"
+         />
+    <TextView
+        android:id="@+id/textHomeGoals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textLarge"
+        android:layout_marginStart="@dimen/marginNormal"
+        android:text="0"
+        app:layout_constraintStart_toEndOf="@+id/textHomeName"
+        app:layout_constraintTop_toTopOf="@+id/textHomeName" />
+    <TextView
+        android:id="@+id/textSeprator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textLarge"
+        android:text="-"
+        app:layout_constraintEnd_toStartOf="@+id/textAwayGoals"
+        app:layout_constraintStart_toEndOf="@+id/textHomeGoals"
+        app:layout_constraintTop_toTopOf="@+id/textHomeName"/>
+
+
+
+    <TextView
+        android:id="@+id/textAwayGoals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textLarge"
+        android:layout_marginEnd="@dimen/marginNormal"
+        tools:text="1"
+        app:layout_constraintEnd_toStartOf="@id/textAwayName"
+        app:layout_constraintTop_toTopOf="@+id/textHomeName"/>
+    <TextView
+        android:id="@+id/textAwayName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textLarge"
+        android:layout_marginEnd="100dp"
+        app:layout_constraintTop_toTopOf="@+id/textHomeName"
+        android:text="test"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="German"/>
+
+
+    <TextView
+        android:id="@+id/textStadium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textLarge"
+        android:layout_marginTop="@dimen/marginNormal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textSeprator"
+        tools:text="stadium name"
+        />
+    <ImageView
+        android:id="@+id/icon_Previous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_margin="@dimen/marginNormal"
+        android:src="@drawable/baseline_arrow_back_ios_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textStadium" />
+    <ImageView
+        android:id="@+id/icon_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/marginNormal"
+        android:src="@drawable/baseline_arrow_forward_ios_24"
+       app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textStadium" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
