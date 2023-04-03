@@ -9,4 +9,5 @@ interface DataManager : Serializable {
     fun getCurrentMatch():Match
     fun getNextMatch():Match
     fun getPreviuosMatch():Match
+    fun matches():List<Match>
 }

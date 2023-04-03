@@ -34,4 +34,8 @@ class DataManagerImpl(  private val dataSource: WorldCupDataSource) : DataManage
         }
         return dataSource.getMatchesData()[matchIndex]
     }
+
+    override fun matches(): List<Match> {
+        return dataSource.getMatchesData()
+    }
 }
